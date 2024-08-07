@@ -1,0 +1,38 @@
+
+use Demo;
+create table Student(Id int,fname varchar(30),lname varchar(30),College varchar(50) );
+select * from Student;
+insert into Student (Id,fname,lname,College) values (01,'Abhijeet','Khamgaon','MGICOET');
+insert into Student(Id,fname,location,College) values(02,'Shubham','Sangli','SAngli COllge');
+insert into Student(Id,fname,location,College) values(03,'Ankit','Nandurbar','NandurbarBOysclg');
+
+alter  table Student add Email varchar(30);
+alter table Student rename column lname to Location;
+update  Student set fname='Abhi' where fname='Abhijeet';
+create index indexno on Student (Id);
+drop index indexno on Student;
+update Student set Email='Pabhijeet' where Id=1; 
+update Student set Id=04 where fname='SHyam';
+
+select * from Student;
+insert into Student (fname,location) values ('Shyam','Khamgaon');
+update Student set College='Mauli' where fname='Shyam';
+create view Col4 AS  select fname,location from Student where Location='Khamgaon';
+update Student set Location='Khamgaon' where fname='Abhi';
+select * from Col4;
+select distinct Location from Student; 
+select * from Student order by fname desc;
+select * from Student where Id=2 and fname like 'S%';
+delete from Student where Id=2 and Location='T';
+delete from student where Id=2;
+select count(*) from Student;
+select count(fname) from Student where id=3;
+select count(fname) from Student group by Location;
+create table Marks( M1 varchar(30),M2 varchar(30),fname varchar(30));
+insert into Marks(M1,M2,fname) values('55','99','Shubham'); 
+select * from Marks;
+
+
+
+
+
