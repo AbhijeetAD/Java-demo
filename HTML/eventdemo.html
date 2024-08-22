@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Event</title>
+    </head>
+<body>
+    <h2 id="myH2">Welcome to Event Listener</h2>
+<script>
+var element=document.getElementById("myH2");
+element.addEventListener("click",headingClicked);
+function headingClicked(){
+    alert("Heading Clicked")
+    element.innerHTML="The Mouse Moved....."
+}
+
+</script>
+</body>
+    </html>
+
+
+
+

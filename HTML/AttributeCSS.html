@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Example</title>
+    </head>
+    <style>
+        [title]{
+            color: green;
+        }
+        p[lang|=en]{
+            background:blue;
+        }
+        [class*="warning"]{
+            color: red;
+        }
+    </style>
+    <body>
+        <p title="heading">It is an example for CSS[attribute]</p>
+        <p lang="en">It is an example of CSS [attribute|="value"] Selector</p>
+        <p class="alert_warning"> It is an example of [attribute*="value"] selector    </p>
+    </body>
+</html>
