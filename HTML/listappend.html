@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>To-Do List</h1>
+    <input type="text" id="li1" placeholder="Enter Fruits">
+    <button onclick="add()">Add</button>
+    <ul id="li2">
+    </ul>
+
+    <script>
+        function add() {
+            const input = document.getElementById('li1').value;
+            const b = input;
+        
+
+            const li = document.createElement('li');
+            li.textContent = b;
+
+            const a = document.getElementById('li2');
+            a.appendChild(li);
+        }
+    </script>
+</body>
+</html>
